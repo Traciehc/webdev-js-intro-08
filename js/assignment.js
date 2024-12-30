@@ -32,5 +32,12 @@ function findLargestNumber(numbers) {
 }
 console.log(findLargestNumber(myNumbers)); //This will output: 354
 
-
+function findAverage(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i ++) {
+    sum += numbers[i];
+  }
+return sum / numbers.length;
+}
+console.log(findAverage(myNumbers)); //This will output: 123.55555555555556
 
