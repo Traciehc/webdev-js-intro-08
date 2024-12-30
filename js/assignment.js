@@ -18,7 +18,7 @@ function findSmallestNumber(numbers) {
   return smallest;
 }
 
-console.log(findSmallestNumber(myNumbers)); // This will output: 25
+
 
 
 function findLargestNumber(numbers) {
@@ -30,7 +30,7 @@ function findLargestNumber(numbers) {
   }
   return largest;
 }
-console.log(findLargestNumber(myNumbers)); //This will output: 354
+
 
 function findAverage(numbers) {
   let sum = 0;
@@ -39,5 +39,18 @@ function findAverage(numbers) {
   }
 return sum / numbers.length;
 }
-console.log(findAverage(myNumbers)); //This will output: 123.55555555555556
 
+
+submissionBtn.addEventListener("click", function () {
+  const smallestNumber = findSmallestNumber(myNumbers);
+  const largestNumber = findLargestNumber(myNumbers); 
+  const averageNumber = findAverage(myNumbers);
+
+  smallestNumberElement.innerHTML = smallestNumber;
+  largestNumberElement.textContent = largestNumber;
+  averageNumberElement.textContent = averageNumber;
+  });
+
+  console.log(findSmallestNumber(myNumbers));
+  console.log(findLargestNumber(myNumbers)); 
+  console.log(findAverage(myNumbers)); 
